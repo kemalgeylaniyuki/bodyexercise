@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7A00BCD4"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="#A3FFEB3B"
+            android:text="Exercise : "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:onClick="start"
+            android:text="start" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="#A4FFEB3B"
+            android:text="Time : "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <ProgressBar
+            android:id="@+id/determinateBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:progress="25" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="135dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:onClick="turnback"
+            android:text="turn back" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
